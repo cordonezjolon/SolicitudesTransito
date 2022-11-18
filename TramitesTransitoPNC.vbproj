@@ -131,6 +131,10 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Forms\ControlFlujos\BandejaFlujo.aspx" />
+    <Content Include="Forms\ControlFlujos\SolicitudTramite.aspx" />
+    <Content Include="Forms\GestionUsuarios\CambioContraseñ.aspx" />
+    <Content Include="Forms\GestionUsuarios\Login.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -1879,6 +1883,34 @@
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ControlFlujos\BandejaFlujo.aspx.designer.vb">
+      <DependentUpon>BandejaFlujo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ControlFlujos\BandejaFlujo.aspx.vb">
+      <DependentUpon>BandejaFlujo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\ControlFlujos\SolicitudTramite.aspx.designer.vb">
+      <DependentUpon>SolicitudTramite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ControlFlujos\SolicitudTramite.aspx.vb">
+      <DependentUpon>SolicitudTramite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionUsuarios\CambioContraseñ.aspx.designer.vb">
+      <DependentUpon>CambioContraseñ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionUsuarios\CambioContraseñ.aspx.vb">
+      <DependentUpon>CambioContraseñ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionUsuarios\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionUsuarios\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2128,6 +2160,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Clases\" />
+    <Folder Include="Forms\ManejoDocumentos\" />
+    <Folder Include="LogicaNegocio\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
