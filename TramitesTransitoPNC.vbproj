@@ -149,6 +149,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\css\sb-admin-2.css" />
     <Content Include="Scripts\css\sb-admin-2.min.css" />
+    <Content Include="Scripts\Custom\jsPersonalizado.js" />
     <Content Include="Scripts\img\undraw_posting_photo.svg" />
     <Content Include="Scripts\img\undraw_profile.svg" />
     <Content Include="Scripts\img\undraw_profile_1.svg" />
@@ -1869,6 +1870,13 @@
       <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Clases\Documentos\Documento.vb" />
+    <Compile Include="Clases\MetodosForm.vb" />
+    <Compile Include="Clases\outputJson.vb" />
+    <Compile Include="Clases\SerializedClass.vb" />
+    <Compile Include="Clases\Tramites\Formulario.vb" />
+    <Compile Include="Clases\Tramites\Tramite.vb" />
+    <Compile Include="Clases\Usuarios\Usuarios.vb" />
     <Compile Include="Contact.aspx.designer.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
@@ -1914,6 +1922,7 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="LogicaNegocio\clsConexionServicios.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -2160,9 +2169,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Clases\" />
     <Folder Include="Forms\ManejoDocumentos\" />
-    <Folder Include="LogicaNegocio\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
