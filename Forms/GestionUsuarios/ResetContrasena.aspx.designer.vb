@@ -11,16 +11,16 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Login
+Partial Public Class ResetContrasena
 
     '''<summary>
-    '''Control frmLogin.
+    '''Control formCambioContraseña.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents frmLogin As Global.System.Web.UI.HtmlControls.HtmlForm
+    Protected WithEvents formCambioContraseña As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
     '''Control txtCorreo.
@@ -32,22 +32,13 @@ Partial Public Class Login
     Protected WithEvents txtCorreo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control txtContrasena.
+    '''Control AlertRecuperar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txtContrasena As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control AlertLogin.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents AlertLogin As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents AlertRecuperar As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
     '''Control lblAlert.
@@ -77,29 +68,38 @@ Partial Public Class Login
     Protected WithEvents lblAlertError As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control btnLogin.
+    '''Control btnResetContrasena.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btnLogin As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btnResetContrasena As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control lbtnRecuperarContraseña.
+    '''Control alertExitoso.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbtnRecuperarContraseña As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents alertExitoso As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
     '''<summary>
-    '''Control lbtnRegistrarme.
+    '''Control lblAlertSucces.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbtnRegistrarme As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents lblAlertSucces As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control lblVolverLogin.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblVolverLogin As Global.System.Web.UI.WebControls.LinkButton
 End Class

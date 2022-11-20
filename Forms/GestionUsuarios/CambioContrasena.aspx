@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="CambioContraseñ.aspx.vb" Inherits="TramitesTransitoPNC.CambioContraseñ" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="CambioContrasena.aspx.vb" Inherits="TramitesTransitoPNC.CambioContraseñ" %>
 
 <!DOCTYPE html>
 
@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+  
 </head>
 <body>
     <form id="form1" runat="server">
