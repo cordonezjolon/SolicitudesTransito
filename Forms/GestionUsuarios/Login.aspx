@@ -15,6 +15,7 @@
     <link href="../../Scripts/css/sb-admin-2.css" rel="stylesheet" />
 </head>
 <body class="bg-gradient-primary">
+   
     <form id="frmLogin" runat="server">
         <div class="container">
 
@@ -39,10 +40,10 @@
                                             <h4 class="text-gray-900 mb-4">Inicio de sesión</h4>
                                         </div>
                                         <div class="form-group">
-                                            <asp:TextBox id="txtCorreo" CssClass="form-control form-control-user" required="true" placeholder="correo electronico" runat="server" TextMode="Email"></asp:TextBox>
+                                            <asp:TextBox id="txtCorreo" CssClass="form-control form-control-user" required="true"  placeholder="correo electronico" runat="server" TextMode="Email"></asp:TextBox>
                                         </div>
                                         <div class="form-group">
-                                            <asp:TextBox id="txtContrasena" CssClass="form-control form-control-user" required="true" placeholder="contraseña" runat="server" TextMode="Password"></asp:TextBox>
+                                            <asp:TextBox id="txtContrasena" CssClass="form-control form-control-user"  required="true" placeholder="contraseña" runat="server" TextMode="Password"></asp:TextBox>
 
                                         </div>
                                         <div class="form-group">
@@ -50,6 +51,19 @@
                                                 <input type="checkbox" class="custom-control-input" id="customCheck" />
                                                 <label class="custom-control-label" for="customCheck">Recuerdame</label>
                                             </div>
+                                        </div>
+                                        <div runat="server" id="AlertLogin" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                            <i class="fa fa-bell" aria-hidden="true"></i>
+                                            <asp:Label id="lblAlert" runat="server"></asp:Label>
+                                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                              </button>
+                                        </div>
+                                        <div runat="server" id="AlertError" class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <asp:Label id="lblAlertError" runat="server"></asp:Label>
+                                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
                                         </div>
                                         <asp:Button id="btnLogin" CssClass="btn btn-primary btn-user btn-block" runat="server" Text="Iniciar Sesion" />
                                         <hr />
