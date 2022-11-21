@@ -38,27 +38,16 @@
 
                                 <div class="form-group row">
                                     <div class="col-sm-4">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <asp:Label ID="lblNacionalidad" runat="server" Text="Nacionalidad"></asp:Label>
-                                            </div>
-                                        </div>
+                                        <asp:Label ID="lblNacionalidad" runat="server" Text="Nacionalidad"></asp:Label>
                                         <asp:DropDownList ID="ddlNacionalidad" CssClass="form-control form-control-user" runat="server"></asp:DropDownList>
                                     </div>
                                     <div class="col-sm-4">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <asp:Label ID="lblDPI" runat="server" Text="DPI"></asp:Label>
-                                            </div>
-                                        </div>
+                                        <asp:Label ID="lblDPI" runat="server" Text="DPI"></asp:Label>
                                         <asp:TextBox ID="txtDPI" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
                                     </div>
                                     <div class="col-sm-4">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <asp:Label ID="lblCargarDI" runat="server" Text="Subir DPI"></asp:Label>
-                                            </div>
-                                        </div>
+                                        <asp:Label ID="lblCargarDI" runat="server" Text="Subir DPI"></asp:Label>
+
                                         <div class="custom-file">
                                             <input type="file" class="custom-file-input" id="fuCargarDPI" />
                                             <label class="custom-file-label" for="inputGroupFile02" aria-describedby="fuCargarDPI">seleccionar archivo</label>
@@ -208,7 +197,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblCorreoCasillero" runat="server" Text="Correo para casillero Electronico"></asp:Label>
-                                        <asp:TextBox ID="txtCorreoCasillero" CssClass="form-control form-control-user" required="true" placeholder="correo electronico" runat="server" TextMode="Email"></asp:TextBox>
+                                        <asp:TextBox ID="txtCorreoCasillero" CssClass="form-control form-control-user" required="true" runat="server" TextMode="Email"></asp:TextBox>
                                     </div>
 
                                 </div>
@@ -227,7 +216,23 @@
                                     <div class="col-sm-3">
                                     </div>
                                 </div>
-                               <!-- Logout Modal-->
+
+
+                                <div runat="server" id="AlertRegistro" class="alert alert-warning alert-dismissible fade show" role="alert">
+                                            <i class="fa fa-bell" aria-hidden="true"></i>
+                                            <asp:Label id="lblAlertRegistro" runat="server"></asp:Label>
+                                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                              </button>
+                                        </div>
+                                        <div runat="server" id="AlertError" class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <asp:Label id="lblAlertError" runat="server"></asp:Label>
+                                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+
+                                <!-- Logout Modal-->
                                 <div class="modal fade" id="ModalTerminos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                                     aria-hidden="true">
                                     <div class="modal-dialog" role="document">
@@ -241,24 +246,24 @@
                                             <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                                             <div class="modal-footer">
                                                 <button class="btn btn-primary" type="button" data-dismiss="modal">Cerrar</button>
-                                               
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                  <hr/>
-                              <%--botones de enviar o cancelar--%> 
-                                  <div class="form-group row">
+                                <hr />
+                                <%--botones de enviar o cancelar--%>
+                                <div class="form-group row">
                                     <div class="col-sm-4"></div>
                                     <div class="col-sm-4">
-                                         <asp:Button id="btnCancelar" CssClass="btn btn-secondary btn-user btn-lg" runat="server" Text="Cancelar" />
-                                      <asp:Button id="btnEnviar" CssClass="btn btn-primary btn-user btn-lg" runat="server" Text="Enviar" />
-                                      
+                                        <asp:Button ID="btnCancelar" CssClass="btn btn-secondary btn-user btn-lg" runat="server" Text="Cancelar" />
+                                        <asp:Button ID="btnEnviar" CssClass="btn btn-primary btn-user btn-lg" runat="server" Text="Enviar" />
+
                                     </div>
-                                       <div class="col-sm-4"></div>
+                                    <div class="col-sm-4"></div>
 
                                 </div>
-                                <hr/>
+                                <hr />
                             </div>
                         </div>
                     </div>
