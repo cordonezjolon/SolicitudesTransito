@@ -133,8 +133,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Forms\ControlFlujos\BandejaFlujo.aspx" />
     <Content Include="Forms\ControlFlujos\SolicitudTramite.aspx" />
-    <Content Include="Forms\GestionUsuarios\CambioContraseñ.aspx" />
+    <Content Include="Forms\GestionUsuarios\CambioContrasena.aspx" />
     <Content Include="Forms\GestionUsuarios\Login.aspx" />
+    <Content Include="Forms\GestionUsuarios\Registro.aspx" />
+    <Content Include="Forms\GestionUsuarios\ResetContrasena.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -1871,6 +1873,7 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Clases\Documentos\Documento.vb" />
+    <Compile Include="Clases\FuncionesGenerales.vb" />
     <Compile Include="Clases\MetodosForm.vb" />
     <Compile Include="Clases\outputJson.vb" />
     <Compile Include="Clases\SerializedClass.vb" />
@@ -1905,11 +1908,11 @@
       <DependentUpon>SolicitudTramite.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Forms\GestionUsuarios\CambioContraseñ.aspx.designer.vb">
-      <DependentUpon>CambioContraseñ.aspx</DependentUpon>
+    <Compile Include="Forms\GestionUsuarios\CambioContrasena.aspx.designer.vb">
+      <DependentUpon>CambioContrasena.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Forms\GestionUsuarios\CambioContraseñ.aspx.vb">
-      <DependentUpon>CambioContraseñ.aspx</DependentUpon>
+    <Compile Include="Forms\GestionUsuarios\CambioContrasena.aspx.vb">
+      <DependentUpon>CambioContrasena.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Forms\GestionUsuarios\Login.aspx.designer.vb">
@@ -1917,6 +1920,20 @@
     </Compile>
     <Compile Include="Forms\GestionUsuarios\Login.aspx.vb">
       <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionUsuarios\Registro.aspx.designer.vb">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionUsuarios\Registro.aspx.vb">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionUsuarios\ResetContrasena.aspx.designer.vb">
+      <DependentUpon>ResetContrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionUsuarios\ResetContrasena.aspx.vb">
+      <DependentUpon>ResetContrasena.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">

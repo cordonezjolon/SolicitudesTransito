@@ -4,7 +4,8 @@
 Public Class Login
     Inherits System.Web.UI.Page
 
-    Public funcionesGenerales As New FuncionesGenerales
+    Private funcionesGenerales As New FuncionesGenerales
+    Private conexionServicios As New clsConexionServicios
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
@@ -20,18 +21,20 @@ Public Class Login
 
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         Try
-            If validarForm() = 1 Then
-                lblAlert.Text = "Ingrese un correo electrónico"
-                AlertLogin.Visible = True
-            ElseIf validarForm() = 2 Then
-                lblAlert.Text = "Ingrese una contraseña"
-                AlertLogin.Visible = True
-            ElseIf validarForm() = 3 Then
-                lblAlert.Text = "Ingrese un correo electrónico valido"
-                AlertLogin.Visible = True
-            ElseIf validarForm() = 0 Then
-                lblAlert.Text = String.Empty
-                AlertLogin.Visible = False
+            If validarForm() = True Then
+                Dim data As New Usuario
+
+                data.correo = txtCorreo.Text
+                data.password = txtContrasena.Text
+                Dim objetoRespuesta As Usuario = conexionServicios.enviaDatosPost(Of Usuario)("Usuarios/ObtenerUsuario", data)
+                If objetoRespuesta.id_usuario > 0 Then
+                    Session("dataUsuario") = objetoRespuesta
+                    Response.Redirect("~/Default.aspx")
+                Else
+                    lblAlert.Text = "Datos de autenticacion incorrectos."
+                    AlertLogin.Visible = True
+                End If
+
             End If
         Catch ex As Exception
             lblAlertError.Text = ex.Message()
@@ -40,19 +43,30 @@ Public Class Login
 
     End Sub
 
-    Public Function validarForm() As Integer
-        Dim Valido As Integer = 0
+    Public Function validarForm() As Boolean
+        Dim valido As Boolean = True
         Try
             If txtCorreo.Text = String.Empty Then
-                Valido = 1
+                lblAlert.Text = "Ingrese un correo electrónico"
+                AlertLogin.Visible = True
+                valido = False
             ElseIf txtContrasena.Text = String.Empty Then
-                Valido = 2
+                lblAlert.Text = "Ingrese una contraseña"
+                AlertLogin.Visible = True
+                valido = False
             ElseIf funcionesGenerales.correoValido(txtCorreo.Text) = False Then
-                Valido = 3
+                lblAlert.Text = "Ingrese un correo electrónico valido"
+                AlertLogin.Visible = True
+                valido = False
+            Else
+                lblAlert.Text = String.Empty
+                AlertLogin.Visible = False
             End If
+            Return Valido
         Catch ex As Exception
             lblAlertError.Text = ex.Message()
             AlertError.Visible = True
+            valido = False
         End Try
 
 

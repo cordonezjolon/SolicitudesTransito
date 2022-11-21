@@ -7,6 +7,7 @@
         End If
     End Sub
     Private Sub inicializarFormulario()
+
         metodos.fnllenarGridview(gvNotificaciones, cargarListaNotificaciones)
         metodos.fnllenarGridview(gvPrevios, cargarListaPrevios)
         metodos.fnllenarGridview(gvSolicitudes, cargarListaSolicitudes)

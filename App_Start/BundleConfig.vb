@@ -26,6 +26,17 @@ Public Class BundleConfig
                         "~/Scripts/vendor/chart.js/Chart.min.js",
                         "~/Scripts/Custom/jsPersonalizado.js"
                      ))
+        bundles.Add(New ScriptBundle("~/bundles/SbAdminJsInternos").Include(
+                        "~/Scripts/vendor/jquery/jquery.min.js",
+                        "~/Scripts/vendor/bootstrap/js/bootstrap.bundle.min.js",
+                        "~/Scripts/vendor/jquery-easing/jquery.easing.min.js",
+                        "~/Scripts/js/sb-admin-2.min.js",
+                        "~/Scripts/vendor/datatables/jquery.dataTables.min.js",
+                        "~/Scripts/vendor/datatables/dataTables.bootstrap4.min.js",
+                        "~/Scripts/vendor/chart.js/Chart.min.js",
+                        "~/Scripts/Custom/jsPersonalizado.js"
+                     ))
+
 
         '' El orden es muy importante para el funcionamiento de estos archivos ya que tienen dependencias explícitas
         'bundles.Add(New ScriptBundle("~/bundles/MsAjaxJs").Include(

@@ -1,22 +1,21 @@
 ﻿Public Class SiteMaster
     Inherits MasterPage
+    Dim dataUsuario As Usuario
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
 
-        dataTemporal()
         inicializarFormulario()
 
     End Sub
-    Private Sub dataTemporal()
-        Session("nombeUsuario") = "CristianOrdoñez"
-    End Sub
+
     Private Sub inicializarFormulario()
+        dataUsuario = DirectCast(Session("dataUsuario"), Usuario)
+        lblNombreUsuario.Text = dataUsuario.nombre
         repMenu.DataSource = creaMenu()
         repMenu.DataBind()
         repNotificaciones.DataSource = cargarNotificaciones()
         repNotificaciones.DataBind()
         repPrevios.DataSource = cargarPrevios()
         repPrevios.DataBind()
-        lblNombreUsuario.Text = Session("nombeUsuario")
         lblContadorNotificaciones.Text = repNotificaciones.DataSource.rows.count()
         lblContadorPrevios.Text = repPrevios.DataSource.rows.count()
 
@@ -89,4 +88,9 @@
         menu.Rows.Add(row)
         Return menu
     End Function
+
+    Protected Sub cambiarPass_ServerClick(sender As Object, e As EventArgs)
+        Session("proceso") = 1
+        Response.Redirect("~/Forms/GestionUsuarios/CambioContrasena.aspx")
+    End Sub
 End Class

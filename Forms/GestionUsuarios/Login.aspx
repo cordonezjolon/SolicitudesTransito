@@ -87,10 +87,6 @@
     </form>
 
     <%-- Carga de librerias javascritp para template SBAdmin  con Bundle Sript--%>
-
-    <script src="../../Scripts/vendor/jquery/jquery.min.js"></script>
-    <script src="../../Scripts/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../../Scripts/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="../../Scripts/js/sb-admin-2.min.js"></script>
+     <%: Scripts.Render("~/bundles/SbAdminJsInternos") %>
 </body>
 </html>

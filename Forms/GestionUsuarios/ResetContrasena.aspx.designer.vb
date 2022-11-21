@@ -32,6 +32,33 @@ Partial Public Class ResetContrasena
     Protected WithEvents txtCorreo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control txtContrasenaActual.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtContrasenaActual As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control txtContrasenaNueva.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtContrasenaNueva As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Control txtContrasenaNuevaConfirma.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txtContrasenaNuevaConfirma As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
     '''Control AlertRecuperar.
     '''</summary>
     '''<remarks>

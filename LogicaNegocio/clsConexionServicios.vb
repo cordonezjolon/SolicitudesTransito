@@ -29,9 +29,9 @@ Public Class clsConexionServicios
         End Try
         Return Nothing
     End Function
-    Public Function enviaDatosPost(ByVal urlServicio As String, data As Object) As DataTable
+    Public Function enviaDatosPost(Of tipoOut)(ByVal urlServicio As String, data As Object) As tipoOut
         Dim strMensaje As String
-        Dim respuestaDatos As DataTable
+        Dim respuestaDatos As tipoOut
         Try
 
             strMensaje = data.TO_JSON()
@@ -51,7 +51,7 @@ Public Class clsConexionServicios
             dataStream = response.GetResponseStream()
             Dim reader As New StreamReader(dataStream)
             Dim serializer As New System.Web.Script.Serialization.JavaScriptSerializer()
-            respuestaDatos = JsonConvert.DeserializeObject(Of DataTable)(reader.ReadToEnd())
+            respuestaDatos = JsonConvert.DeserializeObject(Of tipoOut)(reader.ReadToEnd())
 
             reader.Close()
             response.Close()
