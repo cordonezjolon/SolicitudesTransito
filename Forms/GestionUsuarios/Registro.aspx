@@ -39,11 +39,11 @@
                                 <div class="form-group row">
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblNacionalidad" runat="server" Text="Nacionalidad"></asp:Label>
-                                        <asp:DropDownList ID="ddlNacionalidad" CssClass="form-control form-control-user" runat="server"></asp:DropDownList>
+                                        <asp:DropDownList ID="ddlNacionalidad" CssClass="form-control form-control-user" required="true" runat="server"></asp:DropDownList>
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblDPI" runat="server" Text="DPI"></asp:Label>
-                                        <asp:TextBox ID="txtDPI" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtDPI" CssClass="form-control form-control-user" required="true" runat="server"></asp:TextBox>
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblCargarDI" runat="server" Text="Subir DPI"></asp:Label>
@@ -57,7 +57,7 @@
                                 <div class="form-group row">
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblNIT" runat="server" Text="NIT"></asp:Label>
-                                        <asp:TextBox ID="txtNit" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtNit" CssClass="form-control form-control-user" required="true" runat="server"></asp:TextBox>
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblFechaNac" runat="server" Text="Fecha Nacimiento"></asp:Label>
@@ -75,7 +75,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblPrimerNombre" runat="server" Text="Primer Nombre"></asp:Label>
-                                        <asp:TextBox ID="txtPirmerNombre" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtPirmerNombre" required="true" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
                                     </div>
 
                                     <div class="col-sm-4">
@@ -90,7 +90,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblPrimerApellido" runat="server" Text="Primer Apellido"></asp:Label>
-                                        <asp:TextBox ID="txtPrimerApellido" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtPrimerApellido" required="true" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblSegundoApellido" runat="server" Text="Segundo Apellido"></asp:Label>
@@ -104,7 +104,7 @@
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblNoTelefono" runat="server" Text="Numero Telefono"></asp:Label>
-                                        <asp:TextBox ID="txtNoTelefono" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtNoTelefono" required="true" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblNoTelAlternativo" runat="server" Text="Telefono Alternativo"></asp:Label>
@@ -114,7 +114,7 @@
                                 <div class="form-group row">
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblSexo" runat="server" Text="Sexo"></asp:Label>
-                                        <asp:DropDownList ID="ddlSexo" CssClass="form-control form-control-user" runat="server"></asp:DropDownList>
+                                        <asp:DropDownList ID="ddlSexo" required="true" CssClass="form-control form-control-user" runat="server"></asp:DropDownList>
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblPueblo" runat="server" Text="Pueblo"></asp:Label>
@@ -153,15 +153,15 @@
 
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblDeptoDomiciliar" runat="server" Text="Departamento"></asp:Label>
-                                        <asp:DropDownList ID="ddlDeptoDomicilio" CssClass="form-control form-control-user" runat="server"></asp:DropDownList>
+                                        <asp:DropDownList ID="ddlDeptoDomicilio" required="true" CssClass="form-control form-control-user" runat="server"></asp:DropDownList>
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblMpioDomcilio" runat="server" Text="Municipio"></asp:Label>
-                                        <asp:DropDownList ID="ddlMpioDomicilio" CssClass="form-control form-control-user" runat="server"></asp:DropDownList>
+                                        <asp:DropDownList ID="ddlMpioDomicilio" required="true" CssClass="form-control form-control-user" runat="server"></asp:DropDownList>
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblDireccionDomicilio" runat="server" Text="Direccion de domicilio"></asp:Label>
-                                        <asp:TextBox ID="txtDireccionDomicilio" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtDireccionDomicilio" required="true" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
                                     </div>
                                 </div>
 
@@ -176,15 +176,15 @@
 
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblcorreoElectronico" runat="server" Text="Correo Electrónico"></asp:Label>
-                                        <asp:TextBox ID="txtCorreoElectronico" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtCorreoElectronico" required="true" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblContraseña" runat="server" Text="Contraseña"></asp:Label>
-                                        <asp:TextBox ID="txtContraseña" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtContraseña" required="true" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
                                     </div>
                                     <div class="col-sm-4">
                                         <asp:Label ID="lblConfirmaContraseña" runat="server" Text="Confirmar Contraseña"></asp:Label>
-                                        <asp:TextBox ID="txtConfirmar" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txtConfirmar" required="true" CssClass="form-control form-control-user" runat="server"></asp:TextBox>
                                     </div>
                                 </div>
 
