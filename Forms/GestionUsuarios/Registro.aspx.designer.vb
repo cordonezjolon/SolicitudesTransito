@@ -527,6 +527,42 @@ Partial Public Class Registro
     Protected WithEvents ckTerminosCondiciones As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
+    '''Control AlertRegistro.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AlertRegistro As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''Control lblAlertRegistro.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblAlertRegistro As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control AlertError.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AlertError As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''Control lblAlertError.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lblAlertError As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control btnCancelar.
     '''</summary>
     '''<remarks>
